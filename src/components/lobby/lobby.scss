@@ -1,0 +1,237 @@
+.Lobby {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    // margin-top: 100px;
+    // 左面列表
+    .left {
+        width: 200px;
+        >div {
+            border: 1px solid #ccc;
+        }
+        .make {
+            height: 159px;
+            width: 198;
+            padding-left: 15px;
+            padding-top: 18px;
+            font-size: 14px;
+            .new_make {
+                color: #999;
+            }
+            .tatio {
+                display: flex;
+                margin-top: 13px;
+                p {
+                    font-size: 15px;
+                    color: #5680F9;
+                }
+                span {
+                    margin-left: 10px;
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+            .make-price {
+                margin-top: 26px;
+                color: #999;
+            }
+            b {
+                display: inline-block;
+                font-weight: normal;
+                margin-top: 15px;
+            }
+        }
+        .manage , .common {
+            width: 198;
+            margin-top: 30px;
+            height: 240px;
+            padding-left: 19px;
+            padding-top: 15px;
+            font-size: 15px;
+            .deal {
+                margin-bottom: 2px;
+                color: #999;
+            }
+            li {
+                margin-top: 10px;
+                font-size: 12px;
+                position: relative;
+                padding-left: 10px;
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    height: 5px;
+                    width: 5px;
+                    border-radius: 50%;
+                    background: #5680F9;
+                    margin-top: -2.5px;
+                }
+            }
+        }
+        .common {
+            margin-top: 30px;
+            width: 198;
+            height: 165px;
+        }
+    }
+    //右面列表
+    .right {
+        flex: 1;
+        margin-left: 31px;
+        // 顶部说明
+        .header-nav {
+            display: flex;
+            li {
+                flex: 1;
+                text-align: center;
+                color: #999;
+            }
+        }
+        //顶部类型coin
+        .topNav {
+            height: 88px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            .type {
+                width: 323px;
+                p {
+                    cursor: pointer;
+                }
+                .coin {
+                    margin-top: 22px;
+                    display: flex;
+                    li {
+                        margin-left: 40px;
+                        cursor: pointer;    
+                    }
+                    li:nth-child(1) {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .type:nth-child(2) {
+                margin-left: 60px;
+            }
+        }
+        // 大厅数据列表
+        .bodyList {
+            .header-nav {
+                height: 71px;
+                width: 100%;
+                line-height: 71px;
+            }
+            .list {
+                li {
+                    border-top: 1px solid #ccc;
+                    
+                    .brief {
+                        height: 67px;
+                        display: flex;
+                        p{
+                            flex: 1;
+                            text-align: center;
+                            font-size: 13px;
+                            padding-top: 23px;
+                            button {
+                                height: 34px;
+                                width: 85px;
+                                margin-top: -10px;
+                                border: none;
+                                border-radius: 2px;
+                                background: #1ea362;
+                                color: white;
+                                outline: none;
+                                font-size: 14px;
+                                cursor: pointer;
+                            }
+                            button:hover {
+                                background: #1ea111;
+                            }
+                        }
+                    }
+                    .detail {
+                        height: 190px;
+                        background: #F9FCFF;
+                        position: relative;
+                        .write {
+                            height: 65px;
+                            width: 522px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            display: flex;
+                            line-height: 65px;
+                            input {
+                                width: 120px;
+                                height: 34px;
+                                outline-color: #5680F9;
+                                margin: 0 7.5px;
+                                border-radius: 2px;
+                                border: 1px solid  #ccc;
+                            }
+                            button{
+                                background: #1EA362;
+                                width: 85px;
+                                height: 34px;
+                                color: #fff;
+                                border: none;
+                                margin-top: 17px;
+                                margin-left: 36px;
+                                cursor: pointer;
+                                outline: none;
+                            }
+                            span {
+                                margin-left: 30px;
+                                color: #999;
+                                cursor: pointer;
+                            }
+                            span:hover {
+                                color: #5680F9;
+                            }
+                        }
+                        .message {
+                            position: absolute;
+                            left: 15px;
+                            top: 0;
+                            height: 126px;
+                            width: 423px;
+                            >div {
+                                margin-top: 25px;
+                                display: flex;
+                                p:nth-child(1) {
+                                    width: 264px;
+                                }
+                            }
+                        }
+                        .way {
+                            position: absolute;
+                            top: 110px;
+                            display: flex;
+                            left: 15px;
+                            
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                        .info {
+                            width: 552px;
+                            position: absolute;
+                            bottom: 15px;
+                            left: 15px;
+                            font-size: 12px;
+                            color: #999;
+                        }
+                        .timer {
+                            position: absolute;
+                            right: 48px;
+                            top: 81px;
+                            color: #999;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

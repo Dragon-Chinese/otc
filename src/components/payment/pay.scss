@@ -1,0 +1,281 @@
+
+.Pay {
+    width: 100%;
+    flex: 1;
+    // margin-top: 100px;
+    .flow {
+        height: 120px;
+        width: 100%;
+        background: #F9FCFF;
+    }
+    .wrap {
+        display: flex;
+        .detail {
+            width: 566px;
+            height: 448px;
+            margin-left: 63px;
+            margin-top: 33px;;
+            position: relative;
+            .head {
+                height: 50px;
+                border-bottom: 1px solid #e9e9e9;
+                position: relative;
+                p:nth-child(1) {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                p:nth-child(2) {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: flex;
+                    line-height: 30px;
+                    span {
+                        display: block;
+                        height: 30px;
+                        width: 30px;
+                        border: 1px solid #e9e9e9;
+                        text-align: center;
+                        line-height: 30px;
+                        margin: 0 5px;
+                    }
+                }
+            }
+            .total {
+                font-size: 20px;
+                font-weight: 400;
+                margin-top: 24px;
+            }
+            .unit {
+                margin-top: 35px;
+            }
+            .gross {
+                margin-top: 22px;
+            }
+            h2 {
+                margin-top: 31px;;
+                font-size: 16px;
+            }
+            .go_pay {
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               height: 34px;
+               display: flex;
+               line-height: 34px;
+               .button  {
+                   height: 100%;
+                   width: 85px;
+                   border-radius: 2px;
+                   background: #5680F9;
+                   text-align: center;   
+                   color: white;
+                   cursor: pointer;
+               }
+               .button.await {
+                   width: 110px;
+                   background: #999;
+               }
+               p {
+                   font-size: 14px;
+                   margin-left: 21px;
+                   color: #999;
+               }
+            }
+        }
+        .exchange {
+            width: 394px;
+            height: 597px;
+            margin-top: 15px;
+            margin-left: 71px;
+            border: 1px solid #e9e9e9;
+            display: flex;
+            flex-direction: column;
+            .head {
+                height: 55px;
+                border-bottom: 1px solid #e9e9e9;
+                line-height: 55px;
+                padding-left: 30px;
+                position: relative;
+                span {
+                    position: absolute;
+                    right: 15px;
+                    top: 19px;
+                    height: 17px;
+                    width: 17px;
+                    background: lightcoral;
+                }
+            }
+            .message {
+                flex: 1;
+                overflow: hidden;
+                .mess_detail {
+                    height: 100%;
+                    overflow-y: auto;
+                    position: relative;
+                    .date {
+                        text-align: center;
+                        margin: 20px 0;
+                        color: #999;
+                    }
+                    .hint{
+                        text-align: center;
+                    }
+                    .other {
+                        max-width: 278px;
+                        background: #5680F9;
+                        color: white;
+                        padding: 12px 10px;
+                        border-radius: 2px;
+                        margin-top: 10px;
+                        margin-left: 30px;
+                    }
+                    .own {
+                        max-width: 278px;
+                        border: 1px solid #5680F9;
+                        color: white;
+                        padding: 12px 10px;
+                        border-radius: 2px;
+                        margin-top: 10px;
+                        margin-left: 65px;
+                        color: #5680F9;
+                    }
+                }
+            }
+            .bottom {
+                height: 55px;
+                width: 100%;
+                border-top: 1px solid #e9e9e9;
+                display: flex;
+                span {
+                    display: block;
+                    height: 26px;
+                    width: 26px;
+                    background: lightseagreen;
+                    margin-top: 16px;
+                    margin-left: 30px;
+                }
+                input {
+                    border: none;
+                    outline: none;
+                    flex: 1;
+                    text-indent: 2em;
+                }
+                .send {
+                    width: 57px;
+                    height: 33px;
+                    background: #5680F9;
+                    color: white;
+                    text-align: center;
+                    line-height: 33px;
+                    margin-top: 11px;
+                    margin-right: 13px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .issue {
+        height: 221px;
+        margin-top: 10px;
+        h3 {
+            font-size: 16px;
+        }
+    }
+    .confirm {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .5);
+        .frame {
+            width: 450px;
+            height: 421px;
+            background: white;
+            margin: 120px auto;
+            .top {
+                height: 71px;
+                border-bottom: 1px solid #e9e9e9;
+                line-height: 71px;
+                text-align: center;
+            }
+            .total {
+                text-align: center;
+                height: 70px;
+                line-height: 86px;
+                font-size: 24px;
+                color: #5680F9;
+                margin-bottom: 10px;
+                span {
+                    font-size: 16px;
+                }
+            }
+            li {
+                margin-top: 18px;
+                display: flex;
+                padding-left: 24px;
+                p {
+                    width: 139px;
+                }
+            }
+            .message {
+                margin-top: 26px;
+                text-align: center;
+                span {
+                    font-size: 13px;
+                    color: #999;
+                    display: inline-block;
+                }
+            }
+            .bottom {
+                height: 80px;
+                width: 100%;
+                margin-top: 10px;
+                border-top: 1px solid #e9e9e9;
+                .butWrap {
+                    width: 195px;
+                    height: 34px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    margin-top: 24px;
+                    button {
+                        width: 85px;
+                        height: 100%;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    button:nth-child(1) {
+                        border: 1px solid #e9e9e9;
+                        background: #fff;
+                        color: #5680F9;
+                    }
+                    button:nth-child(2) {
+                        background: #5680F9;
+                        border-color: #5680F9;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .gathering {
+            height: 293px;
+            .tip {
+                margin-left: 24px;
+                margin-top: 28px;
+                font-size: 15px;
+                color: #999;
+            }
+            input {
+                margin-left: 24px;
+                margin-top: 10px;
+                height: 34px;
+                width: 396px;
+                text-indent: 1em;
+                outline-color: #5680F9; 
+            }
+        }
+    }
+}

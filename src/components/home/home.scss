@@ -1,0 +1,149 @@
+.Home {
+    width: 100%;
+    height: 100%;
+    .swiper-container {
+        height: 400px;
+        background: pink;
+    }
+    .product {
+        height: 341px;
+        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        // background: lime;
+        display: flex;
+        align-items: center;
+        .main {
+            height: 144px;
+            width: 920px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: 256px;
+                height: 100%;;
+                box-shadow: 0px 2px 8px 0px #A9BDF9;
+                background: #fff;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                p {
+                    font-size: 18px;
+                    color: #333;
+                    margin-top: 14px;
+                    margin-left: 31px;
+                }
+                span {
+                    font-size: 25px;
+                    margin: 0 31px;
+                    margin-top: 5px;
+                    color: #5680F9;
+                }
+                b {
+                    width: 66px;
+                    height: 25px;
+                    background: #5680F9;
+                    border-radius: 2px;
+                    text-align: center;
+                    line-height: 25px;
+                    font-weight: normal;
+                    color: #fff;
+                    margin-left: 31px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .buy {
+        height: 276px;
+        width: 100%;
+        background: url('../../static/bot-bg.png') no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            margin-top: 54px;
+        }
+        span {
+            margin-top: 12px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+        li {
+            display: flex;
+            height: 17px;
+            line-height: 17px;
+            margin: 0 auto;
+            margin-top: 30px;
+            i {
+                width: 7.58px;
+                height: 14px;
+                background: url('../../static/rightjt.png') no-repeat center;
+                background-size: cover; 
+                margin: 0 10px;
+            }
+            p {
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+        .submit {
+            width: 232px;
+            height: 33px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            button {
+                height: 100%;
+                width: 96px;
+                border: 1px solid #fff;
+                outline: none;
+                background: none;
+                color: #fff;
+                margin-top: 29px;
+                cursor: pointer;
+            }
+        }
+    }
+    .sign {
+        height: 292px;
+        display: flex;
+        flex-direction: column;
+        h2 { 
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 70px;
+        }
+        .input {
+            height: 34px;
+            width: 514px;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 28px;
+            input {
+                width: 381px;
+                height: 100%;
+                outline: none;
+                text-indent: 1em;
+            }
+            button {
+                width: 113px;
+                height: 37px;
+                border: none;
+                background: #5680F9;
+                color: #fff;
+                margin-left: 20px;
+            }
+        }
+    }
+    footer {
+        height: 207px;
+        width: 100%;
+        background: #1F1F1F;
+    }
+}
